@@ -3,6 +3,13 @@ name: Delete Artifacts
 on:
   schedule:
     - cron: '0 0 * * 0'  # This cron expression runs the workflow every Sunday at midnight UTC
+  workflow_dispatch:
+    inputs:
+      GITHUB_TOKEN:
+        description: 'Set the area code'
+        required: false  # Set as false to make it optional
+        default: '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'   # Default value if not provided
+        type: string
 jobs:
   delete-artifacts:
     runs-on: ubuntu-latest
