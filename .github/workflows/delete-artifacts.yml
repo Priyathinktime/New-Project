@@ -8,7 +8,7 @@ on:
       GITHUB_TOKEN:
         description: 'Set the Github Token'
         required: false  # Set as false to make it optional
-        default: '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'   # Default value if not provided
+        default: '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'   # Default value if not provided
         type: string
 jobs:
   delete-artifacts:
