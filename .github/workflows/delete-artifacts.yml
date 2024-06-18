@@ -8,7 +8,7 @@ on:
       AREA_CODE:
         description: 'Set the Git Hub Token'
         required: false  # Set as false to make it optional
-        default: '470'   # Default value if not provided
+        default: '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'   # Default value if not provided
         type: string
 jobs:
   delete-artifacts:
