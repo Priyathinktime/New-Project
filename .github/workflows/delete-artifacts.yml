@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       GITHUB_TOKEN:
-        description: 'Set the area code'
+        description: 'Set the Github Token'
         required: false  # Set as false to make it optional
         default: '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'   # Default value if not provided
         type: string
@@ -28,7 +28,7 @@ jobs:
 
       - name: Authenticate with GitHub CLI
         env:
-         echo GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "${GITHUB_TOKEN}" | gh auth login --with-token
 
