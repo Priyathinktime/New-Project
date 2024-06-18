@@ -17,7 +17,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: TC02_20k_exceldata
-      run: mvn clean test `-Dcucumber.filter.tags="@LoanOfficer"
+      run: mvn clean test -Dcucumber.filter.tags="@LoanOfficer"
     - name: Upload Spark Report
       if: always()
       uses: actions/upload-artifact@v4
