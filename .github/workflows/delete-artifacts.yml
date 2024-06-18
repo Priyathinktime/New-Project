@@ -28,9 +28,11 @@ jobs:
 
       - name: Authenticate with GitHub CLI
         env:
-          echo GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "${GITHUB_TOKEN}" | gh auth login --with-token
+               echo "Logging in with GitHub CLI"
+               echo "Token: $GITHUB_TOKEN"
+               gh auth login --with-token "${GITHUB_TOKEN}"
 
       - name: List and delete artifacts
         env:
