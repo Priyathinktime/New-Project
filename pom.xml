@@ -40,7 +40,7 @@
         <assertj.version>3.24.2</assertj.version>
         <monte-screen-recorder.version>0.7.7.0</monte-screen-recorder.version>
         <mysql-connector-java.version>8.0.33</mysql-connector-java.version>
-        <google.zxing.version>3.5.2</google.zxing.version>
+        <google.zxing.version>3.5.3</google.zxing.version>
         <lombok.version>1.18.28</lombok.version>
         <google.guava.version>32.1.2-jre</google.guava.version>
         <data.supplier.version>1.9.7</data.supplier.version>
